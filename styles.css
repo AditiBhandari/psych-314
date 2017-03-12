@@ -1,0 +1,74 @@
+html {
+	width: 100vw;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: "Roboto";
+	font-size: 1em;
+	background-color: #eee;
+}
+
+.wrapper {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 25px;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+hr {
+	width: 10%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.purp {
+	color: purple;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+#Captions {
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+
+img {
+	width: 70%;
+	margin-left: 15%;
+	height: auto;
+}
+
+.explain {
+	margin-top: 100px;
+}
+
+footer {
+	margin-top: 100px;
+}
+
+button {
+	padding: 25px;
+	width: 50%;
+	height: auto;
+	border-radius: 5px;
+	font-size: 1em;
+	color: #ddd;
+	background-color: purple;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-left: 25%;
+}
+
+button:hover{
+	font-weight: 700;
+	color: #ddd;
+	background-color: #4c004c;
+}
+
+button:active{
+	background-color: #ddd;
+	color: purple;
+}

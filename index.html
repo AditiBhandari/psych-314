@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>HW8 | Psych 314</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>  <link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript">
+var imgLinks = [
+// format: ['imageSource','imageLinkURL'],
+  ['https://aditibhandari.github.io/psych-314/img/pizza.png','eat a large pepperoni pizza every day for 11.7 years'],
+  ['https://aditibhandari.github.io/psych-314/img/beats.png','buy 213 Beats Solo2 Wireless Headphones'],
+  ['https://aditibhandari.github.io/psych-314/img/kittens.png','adopt 426 kittens'],
+  ['https://aditibhandari.github.io/psych-314/img/adele.png','buy 427 Reserved Seating tickets to the Adele concert in Minnesota'],
+  ['https://aditibhandari.github.io/psych-314/img/netflix.png','watch Netflix for 667 years'],
+  ['https://aditibhandari.github.io/psych-314/img/tidal.png','listen to The Life of Pablo on TIDAL for 266 years'],
+  ['http://img14.deviantart.net/94b7/i/2011/193/3/9/my_hogwarts_diploma_by_joekabox-d3nl7ma.jpg','get ~a quarter of a 4-year college diploma'],
+  ['http://farm8.static.flickr.com/7033/6757860435_e0d0defc90.jpg','hire someone to work for Illinois minimum wage for 3.7 years'],
+  ['https://c2.staticflickr.com/2/1028/3175273078_5608ec13f7.jpg','read 639 complete hardback Harry Potter box sets'],
+  ['https://aditibhandari.github.io/psych-314/img/hotel.png','spend 3 nights in a Signature suite at the 7-star Atlantis The Palm hotel in Dubai'],
+  ['https://aditibhandari.github.io/psych-314/img/jacket.png','wear 85 Canada Goose Trillium parkas'],
+  ['https://aditibhandari.github.io/psych-314/img/rent.png','rent this Upper East Side apartment for 10 months']
+  	// NOTE: no comma after last entry
+];
+
+function SetImage(IDS,imgPtr) {
+  imgPtr = parseInt(imgPtr);
+  document.getElementById(IDS).src = imgLinks[imgPtr][0];
+  document.getElementById(IDS).alt = imgLinks[imgPtr][1];
+  document.getElementById('Captions').innerHTML = imgLinks[imgPtr][1];
+}
+
+function RandomLink() {
+  var R = Math.random() * imgLinks.length;
+  SetImage('Pics',R);
+}
+
+function GoToURL(URL) { document.location.href = URL; }
+
+onload = function () { RandomLink(); }
+
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <h1></h1>
+  <h3>The cost of tuition, room and fees at Northwestern has been <span class="purp">steadily increasing</span> over the last few years, with the current year being the <span class="purp">highest so far</span>.</h3>
+  <img id="chart" src="img/chart.png">
+
+<hr>
+
+  <h3>The cost of tuition, room and fees at Northwestern for the 2015-2016 school year is <span class="purp">$64,018</span>.</h3>
+  <h3>With that kind of money, you could*...</h3>
+  <br>
+  <p id="Captions"></p>
+
+  <img id="Pics" height="425" width="600" src="" alt="" onclick="GoToURL(this.alt)"><br>
+    <button onclick="RandomLink()">Really?! What else?</button>
+
+<hr>
+
+  <h3><strong>So what?</strong></h3>
+  <p>For those of us who do not or cannot earn enough money to pay for our college education, $64,018 is an unfathomable large amount to pay, especially considering that the cost increases every year. I decided to break it down into more concrete terms so I could wrap my head around how much money that really is.</p>
+  <p>You can take also take a <a target="_blank" href="https://docs.google.com/spreadsheets/d/1rfL9-8fN8h8wUlEkjkBzIRcTc3uUO-_bjrl2NPQ5UrM/edit?usp=sharing">look at the spreadsheet I used</a>.</p>
+
+  <footer><em>* some figures rounded down to nearest whole number. All images are screenshots or sourced from Creative Commons</em></footer>
+</div>
+
+
+</body>
+
+</html>

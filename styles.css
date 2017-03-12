@@ -13,6 +13,18 @@ html {
 	margin-top: 25px;
 }
 
+@media (max-width: 500px) {
+	.wrapper {
+		width: 90%;
+		margin-left: 5%
+	}
+}
+
+#chart {
+	width: 100%;
+	margin: 0 auto;
+}
+
 h3 {
 	font-weight: 400;
 }
@@ -55,7 +67,7 @@ button {
 	height: auto;
 	border-radius: 5px;
 	font-size: 1em;
-	color: #ddd;
+	color: #fff;
 	background-color: purple;
 	font-weight: 700;
 	margin-top: 30px;
